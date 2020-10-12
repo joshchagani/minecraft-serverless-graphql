@@ -10,20 +10,12 @@ functions:
     handler: app/handler.commandCenter
     events:
       - http:
-          path: graphql
+          path: mineql
           method: post
           cors: true
       - http:
-          path: graphql
+          path: mineql
           method: get
-          cors: true
-      - http:
-          path: graphql
-          method: put/{id}
-          cors: true
-      - http:
-          path: graphql
-          method: delete
           cors: true
 plugins:
   - serverless-dotenv-plugin
